@@ -5,6 +5,17 @@ body {
   font-size: 160%;
   font-weight: 300;
 }
+.brand-logo:after {
+  clear: both;
+}
+.site-name-slogan {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.site-slogan {
+  font-size: 18px;
+}
 h1,
 h2,
 h3 {
@@ -69,11 +80,8 @@ body.front .header .jumbotron {
   margin-bottom: 0;
   border-bottom: none;
 }
-.mid {
-  padding: 2rem 0 0 0;
-}
 .main {
-  padding: 1rem 0 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 .main-col {
   margin-bottom: 2rem;

@@ -1,7 +1,8 @@
 Drupal Dzl
 ============
 
-Custom lightweight Bootstrap theme for Drupal. Fork of the awesome "Tweme" Drupal subtheme by Anton Staroverov (drupal.tonystar.me/tweme) with additional UI improvements and added regions for additional usability. Unlike Tweme, the Jumbotron area is hidden by default, you can utilize it by placing a block of content in the "header" section. Additionally, this release fixed bugs with the commonly used "Administration menu" module's dropdown menu falling behind the theme's top navigation and not being full viewable. 
+Lightweight & flexible Bootstrap sub-theme for Drupal. Fork of Tweme by Anton Staroverov (drupal.tonystar.me/tweme) with major changes made to logo placement, UI adjustments & additional regions added for site building flexibility.
+
 
 Installation
 ------------
@@ -10,7 +11,7 @@ Installation
 2. Go to **Configuration** > **Development** > **jQuery update**.
 3. In the **Default jQuery Version** select the latest available version.
 4. Install [Bootstrap](https://www.drupal.org/project/bootstrap) base theme [as usual](https://www.drupal.org/getting-started/install-contrib/themes).
-5. Install [Dzl] theme.
+5. Install [Tweme](https://www.drupal.org/project/tweme) as usual.
 
 
 Requirements
@@ -18,3 +19,12 @@ Requirements
 
 * [jQuery Update](https://www.drupal.org/project/jquery_update)
 * [Bootstrap](https://www.drupal.org/project/bootstrap) (base theme)
+
+## [Read more](https://drupal.tonystar.me/tweme#main)
+
+
+Additional Notes
+------------
+
+* The top "jumbotron" area is set to display of a block is placed within "header". If you would like a jumbotron on the front page, as a block and place it in this region and assign it to <front> only for visibility. 
+* If you would like to change the navbar to "fixed-top", please replaced "<section class="logo">" with <section class="logo" style="margin-top:51px;"> in page.tlp.php to provide for room for fixed top level navigation. 

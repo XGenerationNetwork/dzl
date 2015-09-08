@@ -1,5 +1,5 @@
 name = Dzl
-description = Ultra lightweight Bootstrap theme for Drupal - Fork of Tweme by Anton Staroverov with additional regions added & UI adjustments (see readme).
+description = Lightweight & flexible Bootstrap sub-theme for Drupal  
 core = 7.x
 base theme = bootstrap
 
@@ -15,18 +15,19 @@ scripts[] = dzl.js
 
 regions[body_top] = Body top
 regions[page_top] = Page top
+regions[logo_more] = Logo more
 regions[header] = Header
 regions[header_bg] = Header background
 regions[help] = Help
 regions[highlighted] = Highlighted
-regions[mid] = Mid
-regions[top_strip] = Top Strip
-regions[main_content] = Main Content
+regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
-regions[share] = Share
+regions[content_bottom] = Content bottom
+regions[mid] = Mid
 regions[second_sidebar_first] = Second sidebar first
 regions[second_sidebar_second] = Second sidebar second
+regions[share] = Share
 regions[bottom] = Bottom
 regions[footer] = Footer
 regions[page_bottom] = Page bottom

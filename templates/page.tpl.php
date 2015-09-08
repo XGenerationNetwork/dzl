@@ -1,18 +1,43 @@
 <?php print render($page['body_top']) ?>
 
+<?php if (!empty($logo) || !empty($site_name)): ?>
+<section class="logo">
+  <div class="container">
+	<div class="visible-xs">
+		<?php if (!empty($logo)): ?>
+		<div class="logo-mobile">
+			<p class="text-center"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding-top:10px;" /></a></p>
+		</div>
+		<?php endif ?>
+		<?php if (!empty($site_name)): ?>
+		<div class="site-name-mobile">
+			<h3 class="text-center" style="margin-bottom:0 !important;"><?php print $site_name ?><br />
+			<span class="site-slogan"><?php print $site_slogan ?></span></h3>
+		    <?php print render($page['logo_more']) ?>
+		</div>
+		<?php endif ?>
+	</div>
+	<div class="visible-lg visible-md visible-sm site-name-slogan">
+		<?php if (!empty($logo)): ?>
+		<div class="logo" style="float: left;">
+			<p class="text-left"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding-top:10px;" /></a></p>
+		</div>
+		<?php endif ?>
+		<?php if (!empty($site_name)): ?>
+		<div class="clear" style="float: right;">
+			<h3 class="text-right" style="margin-bottom:0 !important;"><?php print $site_name ?><br />
+			<span class="site-slogan"><?php print $site_slogan ?></span></h3>
+			<?php print render($page['logo_more']) ?>
+		</div>
+		<?php endif ?>
+	</div>
+  </div>
+</section>
+<?php endif ?>	
+
 <div class="<?php print $navbar_classes ?>">
   <div class="container">
     <div class="navbar-header">
-      <?php if (!empty($logo) || !empty($site_name)): ?>
-      <a class="navbar-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>">
-        <?php if (!empty($logo)): ?>
-        <img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" />
-        <?php endif ?>
-        <?php if (!empty($site_name)): ?>
-        <span><?php print $site_name ?></span>
-        <?php endif ?>
-      </a>
-      <?php endif ?>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -41,7 +66,45 @@
 </header>
 <?php endif ?>
 
-<?php if ($page['mid']): ?>
+
+<section class="main">
+  <div class="container">
+        <?php print $breadcrumb ?>
+    <div class="row">
+      <?php $_content_cols = 12 - 3 * !empty($page['sidebar_first']) - 3 * !empty($page['sidebar_second']) ?>
+      <section class="main-col col-md-<?php print $_content_cols  ?><?php print !empty($page['sidebar_first']) ? ' col-md-push-3' : '' ?>">
+        <?php print $messages ?>
+        <?php print render($page['help']) ?>
+        <?php print render($page['highlighted']) ?>
+    <div class="action_links">
+      <?php if (!empty($action_links)): ?>
+      <ul class="action-links pull-right">
+        <?php print render($action_links) ?>
+      </ul>
+      <?php endif ?>
+      <?php print render($tabs) ?>
+    </div>
+		<?php print render($title_prefix) ?>
+		<h1><?php print $title ?></h1>
+		<?php print render($title_suffix) ?>
+        <?php print render($page['content']) ?>
+      </section>
+      <?php if (!empty($page['sidebar_first'])): ?>
+      <aside class="main-col col-md-3 col-md-pull-<?php print $_content_cols  ?>">
+        <?php print render($page['sidebar_first']) ?>
+      </aside>
+      <?php endif ?>
+      <?php if (!empty($page['sidebar_second'])): ?>
+      <aside class="main-col col-md-3">
+        <?php print render($page['sidebar_second']) ?>
+      </aside>
+      <?php endif ?>
+    </div>
+  </div>
+</section>
+
+<?php print render($page['content_bottom']) ?>
+
 <section class="mid">
   <div class="container">
     <div class="row">
@@ -57,45 +120,6 @@
       <?php if (!empty($page['second_sidebar_second'])): ?>
       <aside class="main-col col-md-3">
         <?php print render($page['second_sidebar_second']) ?>
-      </aside>
-      <?php endif ?>
-    </div>
-  </div>
-</section>
-<?php endif ?>
-
-<?php print render($page['top_strip']) ?>
-
-<section class="main">
-  <div class="container">
-        <?php print $breadcrumb ?>
-    <div class="row">
-      <?php $_content_cols = 12 - 3 * !empty($page['sidebar_first']) - 3 * !empty($page['sidebar_second']) ?>
-      <section class="main-col col-md-<?php print $_content_cols  ?><?php print !empty($page['sidebar_first']) ? ' col-md-push-3' : '' ?>">
-        <?php print $messages ?>
-        <?php print render($page['help']) ?>
-        <?php print render($page['highlighted']) ?>
-		<div class="action_links">
-		<?php if (!empty($action_links)): ?>
-		<ul class="action-links pull-right">
-			<?php print render($action_links) ?>
-		</ul>
-		<?php endif ?>
-		<?php print render($tabs) ?>
-		</div>
-		<?php print render($title_prefix) ?>
-			<h1 style="margin-top:0px !important;"><?php print $title ?></h1>
-		<?php print render($title_suffix) ?>
-        <?php print render($page['main_content']) ?>
-      </section>
-      <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="main-col col-md-3 col-md-pull-<?php print $_content_cols  ?>">
-        <?php print render($page['sidebar_first']) ?>
-      </aside>
-      <?php endif ?>
-      <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="main-col col-md-3">
-        <?php print render($page['sidebar_second']) ?>
       </aside>
       <?php endif ?>
     </div>
