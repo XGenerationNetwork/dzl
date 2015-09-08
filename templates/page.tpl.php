@@ -6,7 +6,7 @@
 	<div class="visible-xs">
 		<?php if (!empty($logo)): ?>
 		<div class="logo-mobile">
-			<p class="text-center" style="margin:0;"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding:10px" /></a></p>
+			<p class="text-center" style="margin:0 !important;"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding:10px" /></a></p>
 		</div>
 		<?php endif ?>
 		<?php if (!empty($site_name)): ?>
