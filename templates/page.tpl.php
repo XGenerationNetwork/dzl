@@ -6,12 +6,12 @@
 	<div class="visible-xs">
 		<?php if (!empty($logo)): ?>
 		<div class="logo-mobile">
-			<p class="text-center"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding-top:10px;" /></a></p>
+			<p class="text-center" style="margin:0;"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding:10px" /></a></p>
 		</div>
 		<?php endif ?>
 		<?php if (!empty($site_name)): ?>
 		<div class="site-name-mobile">
-			<h3 class="text-center" style="margin-bottom:0 !important;"><?php print $site_name ?><br />
+			<h3 class="text-center" style="margin:0 !important;"><?php print $site_name ?><br />
 			<span class="site-slogan"><?php print $site_slogan ?></span></h3>
 		    <?php print render($page['logo_more']) ?>
 		</div>
@@ -20,7 +20,7 @@
 	<div class="visible-lg visible-md visible-sm site-name-slogan">
 		<?php if (!empty($logo)): ?>
 		<div class="logo" style="float: left;">
-			<p class="text-left"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding-top:10px;" /></a></p>
+			<p class="text-left"><a class="logo-brand" href="<?php print $front_page ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" style="padding:10px 0 10px 0;" /></a></p>
 		</div>
 		<?php endif ?>
 		<?php if (!empty($site_name)): ?>
