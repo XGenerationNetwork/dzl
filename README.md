@@ -1,4 +1,4 @@
-## **For more information and additional resources including recommended modules and the drush commands to copy and paste to install them, please visit: [http://xgeneration.net/resources.html](http://xgeneration.net/resources.html)** ##
+## **For more information and additional resources including recommended modules, please visit: [http://xgeneration.net/resources.html](http://xgeneration.net/resources.html)** ##
 
 Drupal Dzl
 ============
