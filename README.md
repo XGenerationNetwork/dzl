@@ -13,7 +13,7 @@ Installation
 2. Go to **Configuration** > **Development** > **jQuery update**.
 3. In the **Default jQuery Version** select the latest available version.
 4. Install [Bootstrap](https://www.drupal.org/project/bootstrap) base theme [as usual](https://www.drupal.org/getting-started/install-contrib/themes).
-5. Install [Tweme](https://www.drupal.org/project/tweme) as usual.
+5. Install [Dzl Theme
 
 
 Requirements
