@@ -22,8 +22,6 @@ Requirements
 * [jQuery Update](https://www.drupal.org/project/jquery_update)
 * [Bootstrap](https://www.drupal.org/project/bootstrap) (base theme)
 
-## [Read more](https://drupal.tonystar.me/tweme#main)
-
 
 Additional Notes
 ------------
