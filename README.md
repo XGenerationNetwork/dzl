@@ -1,3 +1,5 @@
+## **For more information and additional resources including recommended modules, please visit: [http://xgeneration.net/resources.html](http://xgeneration.net/resources.html)** ##
+
 Drupal Dzl
 ============
 
@@ -11,7 +13,7 @@ Installation
 2. Go to **Configuration** > **Development** > **jQuery update**.
 3. In the **Default jQuery Version** select the latest available version.
 4. Install [Bootstrap](https://www.drupal.org/project/bootstrap) base theme [as usual](https://www.drupal.org/getting-started/install-contrib/themes).
-5. Install [Tweme](https://www.drupal.org/project/tweme) as usual.
+5. Install [Dzl] Theme
 
 
 Requirements
@@ -20,11 +22,9 @@ Requirements
 * [jQuery Update](https://www.drupal.org/project/jquery_update)
 * [Bootstrap](https://www.drupal.org/project/bootstrap) (base theme)
 
-## [Read more](https://drupal.tonystar.me/tweme#main)
-
 
 Additional Notes
 ------------
 
 * The top "jumbotron" area is set to display of a block is placed within "header". If you would like a jumbotron on the front page, as a block and place it in this region and assign it to <front> only for visibility. 
-* If you would like to change the navbar to "fixed-top", please replaced "<section class="logo">" with <section class="logo" style="margin-top:51px;"> in page.tlp.php to provide for room for fixed top level navigation. 
+* If you would like to change the navbar to "fixed-top", please replaced "<section class="logo">" with <section class="logo" style="margin-top:51px;"> in page.tlp.php to provide for room for fixed top level navigation.
