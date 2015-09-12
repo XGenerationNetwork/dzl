@@ -84,10 +84,9 @@ function dzl_menu_link__menu_footer_sitemap($vars) {
  * Overrides theme_system_powered_by().
  */
 function dzl_system_powered_by() {
-  return '© ' . date('Y') . ' <a href="' . base_path() . '">' . variable_get('site_name') . '</a>. ' .
+  return '© ' . date('Y') . ' <a href="' . base_path() . '">' . variable_get('site_name') . '</a><br /> ' .
     theme_system_powered_by() .
-    (module_exists('atoms') ? ', <a href="http://drupal.tonystar.me/atoms">Atoms</a>' : '') .
-    ' ' . t('and') . ' <a href="http://xgeneration.net/dzl">Dzl v1.7</a>.';
+    ' ' . t('with') . ' <a href="http://xgeneration.net/resources.html">XGeneration Network - "Dzl" Theme</a>';
 }
 
 /**
