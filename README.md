@@ -27,4 +27,5 @@ Additional Notes
 ------------
 
 * The top "jumbotron" area is set to display of a block is placed within "header". If you would like a jumbotron on the front page, as a block and place it in this region and assign it to <front> only for visibility. 
-* If you would like to change the navbar to "fixed-top", please replaced "<section class="logo">" with <section class="logo" style="margin-top:51px;"> in page.tlp.php to provide for room for fixed top level navigation.
+* Note: If you would like to change the navbar to "fixed-top", please replaced "<section class="logo">" with <section class="logo" style="margin-top:51px;"> in page.tlp.php to provide for room for fixed top level navigation.
+* Note: If your site has a wider logo and / or wider Site Name / Site Slogan, you can swap out the "visible-sm" tag in page.tlp.php file from line 18 to line 6, enabling the vertical display which allows for more room for the "sm" size view. 
