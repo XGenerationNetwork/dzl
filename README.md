@@ -22,6 +22,10 @@ Requirements
 * [jQuery Update](https://www.drupal.org/project/jquery_update)
 * [Bootstrap](https://www.drupal.org/project/bootstrap) (base theme)
 
+Header Notes
+------------
+
+To use a background in the header region, please download and install the [Image Block] module (https://www.drupal.org/project/imageblock) then go to "Structure -> Blocks -> Add Image Block" and put the newly created Image Block in the "Header background" region. The background will show up when you place a block in the "Header" section, behind that content.
 
 Additional Notes
 ------------
