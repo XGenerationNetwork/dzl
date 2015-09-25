@@ -7,6 +7,7 @@
     <title><?php print $head_title ?></title>
     <?php print $styles ?>
     <?php print $scripts ?>
+	<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
   </head>
   <body class="<?php print $classes ?>"<?php print $attributes ?>>
     <?php print $page_top ?>

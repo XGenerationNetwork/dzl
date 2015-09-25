@@ -22,6 +22,15 @@ Requirements
 * [jQuery Update](https://www.drupal.org/project/jquery_update)
 * [Bootstrap](https://www.drupal.org/project/bootstrap) (base theme)
 
+CSS3 Animated Blocks Enabled with jQuery scroll delay
+------------
+**NEW:** 
+Added Animate.css - http://daneden.me/animate & Modernizr http://modernizr.com (CDN version baked into html.php.tpl) an included javascript to enable scroll delay.
+**TO USE** 
+Option 1 (very simple) Use the Block Class module - https://www.drupal.org/project/block_class and simply assign "animated choiceofanimation" (example: "animated shake") in the block CSS class.   
+Option 2 (more advanced) Assign the following code (class="revealOnScroll" data-animation="fadeInUp") to any element to trigger the desired animation (defined in data-animation="") on scroll. (Example: class="revealOnScroll" data-animation="bounce") 
+A full listing of all of the animations and demonstrations of their effects is available at => http://daneden.me/animate
+
 Header Notes
 ------------
 
