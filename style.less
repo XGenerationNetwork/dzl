@@ -1,4 +1,10 @@
 @import '../../libraries/bootstrap/less/variables.less';
+.navbar-is-fixed-top.admin-menu .region-page-top  {
+  margin-top: 80px !important;
+}
+.navbar-is-fixed-top .region-page-top {
+  margin-top: 50px;
+}
 
 html {
   background: #222;
@@ -7,6 +13,11 @@ html {
 body {
   font-size: 160%;
   font-weight: 300;
+}
+@media screen and (min-width: 769px) {
+	.logo {
+	  height: 100px;
+	}
 }
 
 .brand-logo:after {
